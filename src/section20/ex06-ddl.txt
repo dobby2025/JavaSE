@@ -9,8 +9,8 @@ CREATE TABLE 문
     데이터를 저장할 테이블을 생성합니다.
 */
 
-CREATE TABLE dept
-        (deptno NUMBER(6),
+CREATE TABLE dept(
+		deptno NUMBER(6),
         dname VARCHAR2(200),
         loc VARCHAR2(200),
         create_date DATE DEFAULT SYSDATE);
