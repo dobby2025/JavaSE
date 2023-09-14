@@ -13,6 +13,7 @@ public class Comment {
 		
 		int r = 10;
 		area(r);
+		Comment.area(r);
 	}
 	
 	/** JavaDoc 주석  

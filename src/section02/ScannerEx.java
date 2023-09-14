@@ -1,7 +1,5 @@
 package section02;
-
 import java.util.Scanner;
-
 /*
  * Scanner 클래스
  * 	사용자로부터 데이터를 읽기 위해 사용되는 클래스
