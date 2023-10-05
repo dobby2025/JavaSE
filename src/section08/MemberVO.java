@@ -8,6 +8,10 @@ public class MemberVO {
 	private String mobile;
 	private String email;
 	
+	public static void printHello() {
+		System.out.println("Hello, MemberVO");
+	}
+	
 	public String getId() {
 		return id;
 	}
