@@ -16,7 +16,7 @@ public class JavaLang02 {
 	public static void main(String[] args) throws CloneNotSupportedException {
 		
 		Soccer soccer1 = new Soccer("토트넘 훗스퍼", "런던", "1882", "프리미어리그");
-		
+				
 		Soccer soccer2 = soccer1;
 		
 		Soccer soccer3 = (Soccer) soccer1.callClone();
