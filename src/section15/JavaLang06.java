@@ -15,7 +15,7 @@ public class JavaLang06 {
 		System.out.println("num: " + num);
 		
 		Integer num2 = 10;	// 오토박싱
-		int num3 = Integer.valueOf(10);	// 오토언박싱
+		int num3 = 10;	// 오토언박싱
 		// 생성자를 통한 선언은 JDK 1.9부터 사용하지 않는것을 권장
 		Integer num4 = new Integer(10);
 		Integer num5 = Integer.valueOf(10);	
@@ -35,11 +35,28 @@ public class JavaLang06 {
 		Character ch = Character.valueOf('A');
 		
 		
+		int iNum1 = 10;
+		Integer iNum2 = 10;
+		
+		System.out.println("==========================");
+		identityHashCode_KTH(iNum1);
+		identityHashCode_KTH(iNum2);
 		
 		
 	}
+	
+	
+	public static void identityHashCode_KTH(Integer num) {	// Integer num = 10;
+		System.out.println(System.identityHashCode(num));
+	}
 
 }
+
+
+
+
+
+
 
 
 
