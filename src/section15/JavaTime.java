@@ -68,7 +68,6 @@ public class JavaTime {
         Instant currentUTC = Instant.now();
         System.out.println("Current UTC Time: " + currentUTC);
         
-		
 	}
 
 }
