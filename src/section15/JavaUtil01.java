@@ -9,6 +9,7 @@ import java.util.Random;
  * Random 클래스
  * 	난수를 생성해주는 클래스
  * 
+ * 
  */
 public class JavaUtil01 {
 	

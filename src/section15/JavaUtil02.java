@@ -14,7 +14,6 @@ public class JavaUtil02 {
 		// iArray = {4, 1, 3, 2 ... 45};
 		Random ran = new Random();
 		
-		
 		// 1~45 셔플 
 		for(int i = 0; i < iArray.length; i++) {
 			// 0 ~ 44 난수 값 반환
