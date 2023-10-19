@@ -16,7 +16,7 @@ public class JavaUtil06 {
 			int addHour,
 			int addMinute,
 			int addSecond
-			) throws ParseException{
+			) throws ParseException {
 		
 		SimpleDateFormat sdf = new SimpleDateFormat(format);
 		Date date = sdf.parse(strDate);
@@ -35,11 +35,12 @@ public class JavaUtil06 {
 		
 	}
 	
-	public static void main(String[] args) throws ParseException {
+	public static void main(String[] args) throws ParseException  {
+		
 		String strDate = "2023-10-19 20:22:00";
 		String format = "yyyy-MM-dd HH:mm:ss";
 		
-		String result = dateCalc(strDate, format, 0, 0, 100, 0, 0, 0);
+		String result = dateCalc(strDate, format, 0, 0, -99, 0, 0, 0);
 		
 		System.out.println("100일 후 날짜 : " + result);
 		
