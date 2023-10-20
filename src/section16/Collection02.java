@@ -18,7 +18,7 @@ public class Collection02 {
 	
 	public static void main(String[] args) {
 		
-		List<String> list = new ArrayList<String>(); 
+		ArrayList<String> list = new ArrayList<String>(); 
 		
 		// 데이터 저장하기		// 인덱스번호
 		list.add("피카츄");	// 0
