@@ -43,6 +43,7 @@ public class Collection05 {
 		member1.put("name", "홍길동");
 		member1.put("mobile", "01010001234");
 		member1.put("address", "서울특별시");
+		member1.put("jobId", "개발자");
 		
 		member2.put("no", 2);
 		member2.put("name", "짱구");
@@ -72,20 +73,18 @@ public class Collection05 {
 			4	도라에몽	01040001234	오징어도시
 		*/
 		
-		System.out.println("no\tname\tmobile\t\taddress");
+		System.out.println("no\tname\tmobile\t\taddress\tjobId");
 		for(int i = 0; i < memberList.size(); i ++) {
 			Map<String, Object> map = memberList.get(i);
 			int no = (int) map.get("no");
 			String name = (String) map.get("name");
 			String mobile = (String) map.get("mobile");
 			String address = (String) map.get("address");
+			String jobId = (String) map.get("jobId");
 			
-			System.out.println(no+"\t"+name+"\t"+mobile+"\t"+address);
-			
+			System.out.println(no+"\t"+name+"\t"+mobile+"\t"+address +"\t" + jobId);
 		}
-
 	}
-	
 }
 
 
