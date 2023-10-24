@@ -48,7 +48,6 @@ public class Lambda02 {
 			.filter(element -> element.endsWith("at"))
 			.forEach(element -> System.out.println("element- " + element));
 	}
-
 }
 
 
