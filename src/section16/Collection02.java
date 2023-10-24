@@ -66,7 +66,7 @@ public class Collection02 {
 		
 		System.out.println("===================================");
 		// ArrayList와 동일한 기능 + Thread Safe 
-		List<String> vec = new Vector<String>();
+		Vector<String> vec = new Vector<String>();
 		vec.add("슈퍼맨");
 		vec.add("배트맨");
 		
