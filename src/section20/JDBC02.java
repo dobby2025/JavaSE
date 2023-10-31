@@ -17,7 +17,7 @@ public class JDBC02 {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
 			// 2. 데이터베이스 연결
-			String url = "jdbc:oracle:thin:@localhost:21521:xe";
+			String url = "jdbc:oracle:thin:@localhost:31521:xe";
 			conn = DriverManager.getConnection(url, "hr", "hr");
 			
 			// 3. 쿼리 작성
