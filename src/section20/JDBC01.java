@@ -19,16 +19,21 @@ public class JDBC01 {
 		ResultSet rs = null;
 		
 		try {
+			// 1. 드라이버 클래스 정보 로딩
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			
+			// 2. 데이터베이스 연결
 			String url = "jdbc:oracle:thin:@localhost:31521:xe";
 			conn = DriverManager.getConnection(url, "hr", "hr");
 			
+			// 3. 쿼리 수행을 위해 Statement 객체 생성
 			stmt = conn.createStatement();
 			
+			// 4. SQL 쿼리 작성
 			String param ="30";
 			String sql = "SELECT * FROM employees WHERE department_id = "  + param;
 			
+			// 5. 쿼리 수행
 			rs = stmt.executeQuery(sql);
 			
 			while(rs.next()) {
