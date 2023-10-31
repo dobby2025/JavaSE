@@ -1,6 +1,7 @@
 package section15;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 /*
  * String 메서드
