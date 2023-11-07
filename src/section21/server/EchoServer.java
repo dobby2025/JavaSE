@@ -1,4 +1,12 @@
 package section21.server;
+/*
+ * 소켓(Socket)
+ * 	네트워크 통신을 위한 자바 프로그래밍 API 이다.
+ * 	서버 간의 양방향 데이터 통신을 구현하는데 사용된다.
+ * 
+ * 
+ */
+
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -24,32 +24,32 @@ public class Network03 {
 		// key - String, value - List<String>
 		Map<String, List<String>> headMap = urlConn.getHeaderFields();
 		
-//		Set<String> set = headMap.keySet();
-//		Iterator<String> iterator = set.iterator();
-//		while(iterator.hasNext()) { 
-//			String key = iterator.next();
-//			List<String> listValue = headMap.get(key);
-//			
-//			System.out.print(key + ": ");
-//			for(String values : listValue) {
-//				System.out.print(values + " ");
-//			}
-//			System.out.println();
-//		}
-		
-		// getInputStream() 메소드는 URLConnection 에서 입력 스트림을 얻어 온다.
-		InputStream in = urlConn.getInputStream();
-		InputStreamReader isr = new InputStreamReader(in, "utf-8");
-		BufferedReader br = new BufferedReader(isr);
-		
-		String readLine = null;
-		while((readLine = br.readLine()) != null) {
-			System.out.println(readLine);
+		Set<String> set = headMap.keySet();
+		Iterator<String> iterator = set.iterator();
+		while(iterator.hasNext()) { 
+			String key = iterator.next();
+			List<String> listValue = headMap.get(key);
+			
+			System.out.print(key + ": ");
+			for(String values : listValue) {
+				System.out.print(values + " ");
+			}
+			System.out.println();
 		}
 		
-		br.close();
-		isr.close();
-		in.close();
+		// getInputStream() 메소드는 URLConnection 에서 입력 스트림을 얻어 온다.
+//		InputStream in = urlConn.getInputStream();
+//		InputStreamReader isr = new InputStreamReader(in, "utf-8");
+//		BufferedReader br = new BufferedReader(isr);
+//		
+//		String readLine = null;
+//		while((readLine = br.readLine()) != null) {
+//			System.out.println(readLine);
+//		}
+		
+//		br.close();
+//		isr.close();
+//		in.close();
 		
 	}
 
